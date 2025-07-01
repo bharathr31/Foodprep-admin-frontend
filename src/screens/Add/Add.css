@@ -1,0 +1,29 @@
+/* Dropzone area */
+.dropzone {
+  border: 2px dashed var(--fg);
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  background-color: var(--bg);
+  color: var(--fg);
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.dropzone p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.dropzone:hover {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+/* Thumbnail preview */
+.thumb {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid var(--fg);
+}

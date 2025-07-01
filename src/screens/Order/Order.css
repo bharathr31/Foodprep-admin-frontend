@@ -1,0 +1,81 @@
+.order-item {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 2fr 1fr 1fr 1fr 1.5fr;
+  align-items: start;
+  gap: 20px;
+  border: 1px solid var(--theme-color);
+  padding: 20px;
+  margin: 20px 0;
+  font-size: 1rem;
+  color: #505050;
+}
+
+.order-item-food {
+  font-weight: 600;
+}
+
+.order-item-name {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.order-user-details {
+  line-height: 1.5;
+}
+
+.order-item-address {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.order-item-phone,
+.order-item-count,
+.order-item-price {
+  font-size: 0.95rem;
+}
+
+.order-item-select {
+  background-color: #ffe8e4;
+  border: 1px solid var(--theme-color);
+  width: 150px;
+  padding: 6px;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+
+@media (max-width: 970px) {
+  .order-item {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 16px 14px;
+    font-size: 0.95rem;
+    border-radius: 8px;
+  }
+
+  .order-item img {
+    width: 40px;
+    align-self: flex-start;
+  }
+
+  .order-item-food,
+  .order-item-name,
+  .order-item-address,
+  .order-item-phone,
+  .order-item-count,
+  .order-item-price {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  .order-item-select {
+    width: 100%;
+    padding: 10px;
+    font-size: 0.95rem;
+  }
+
+  .order-user-details {
+    line-height: 1.4;
+  }
+}
